@@ -6,15 +6,16 @@ int main() {
     cin>>n;
     if(n<=0){
         return 0;
-    }
-    cout<<1<<endl;
-    while(k<n){
-        k=i+j;
-        if(k<n){
-            cout<<k<<endl;
+    }else {
+        cout << 1 << endl;
+        while (k < n) {
+            k = i + j;
+            if (k <= n) {
+                cout << k << endl;
+            }
+            i = j;
+            j = k;
         }
-        i=j;
-        j=k;
     }
     return 0;
 }
